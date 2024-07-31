@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Cricket Game</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="head-1">Cricket Fever</h1>
+
+        <div class="container">
+            <div class="images-row">
+                <button class="button" onclick="ourchoice = 'Bat'; console.log(`You have chosen ${ourchoice}`); ran(ourchoice);">
+                    <img src="Images/bat.png" class="img-all" alt="Bat">
+                </button>
+
+                <button class="button" onclick="ourchoice = 'Ball'; console.log(`You have chosen ${ourchoice}`); ran(ourchoice);">
+                    <img src="Images/ball.png" class="img-all" alt="Ball">
+                </button>
+
+                <button class="button" onclick="ourchoice = 'Stump'; console.log(`You have chosen ${ourchoice}`); ran(ourchoice);">
+                    <img src="Images/stumps.png" class="img-all" alt="Stumps">
+                </button>
+            </div>
+
+            <h3 class="user-move"></h3>
+            <h3 class="computer-move"></h3>
+            <h3 class="result"></h3>
+            <h3 class="final-score"></h3>
+            <button class="reset-button" onclick="localStorage.clear(); resetScore();">
+                <img src="Images/reset.png" class="img-all" alt="Reset">
+            </button>
+        </div>
+
+      
+        
+
+        <!-- Confetti Container -->
+        <div id="confetti-container"></div>
+    </main>
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
